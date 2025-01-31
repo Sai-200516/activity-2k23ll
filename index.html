@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            text-align: center;
+            background-color: green;
+            padding: 10px 40px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+        .head h1 {
+            color: white;
+        }
+        .head a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .main {
+            margin: 40px 10px; 
+            display: grid;
+            grid-template-columns: 13cm 13cm 13cm;
+            grid-template-rows: 5cm 5cm 5cm;
+            margin-top: 80px; /* Prevent content from overlapping with fixed header */
+        }
+        .main-1 {
+            margin: 20px;
+            border: 2px solid whitesmoke;
+            padding: 10px;
+            grid-row: 1/2;
+            grid-column: 1;
+            border-radius: 2px 30px;
+            box-shadow: 10px 10px lightblue;
+        }
+        h1 {
+            color: green;
+        }
+        .main-2 {
+            margin: 20px;
+            border: 2px solid whitesmoke;
+            padding: 10px;
+            grid-column: 3 /3; /* Fixed column placement */
+            border-radius: 2px 30px;
+            box-shadow: 10px 10px lightblue;
+        }
+        .main-3 {
+            margin: 20px;
+            border: 2px solid whitesmoke;
+            padding: 10px;
+            grid-row: 3/4; /* Fixed row placement */
+            border-radius: 2px 30px;
+            box-shadow: 10px 10px lightblue;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: green;
+            color: white;
+            margin-top: 20px;
+            
+            
+        }
+        .down h1{
+            color: white;
+        }
+        .down a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Welcome to Your Website Task</h1>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="main">
+        <div class="main-1">
+            <h1>About CSS</h1>
+            <p>Cascading Style Sheets (CSS) allow you to style and layout your web pages, adding colors, spacing, and more.</p>
+        </div>
+        <div class="main-2">
+            <h1>Box Model</h1>
+            <p>The CSS box model describes the rectangular boxes generated for elements. It includes margins, borders, padding, and the actual content.</p>
+        </div>
+        <div class="main-3">
+            <h1>Responsive Design</h1>
+            <p>Responsive Design ensures your website looks great on all devices, from desktops to mobile phones.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="down">
+            <h1>Created by Appikonda Sai | Follow us on</h1>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
